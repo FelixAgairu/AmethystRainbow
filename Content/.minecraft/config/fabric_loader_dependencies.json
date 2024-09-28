@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "overrides": {
+    "frost":			{"-depends":{"minecraft": "IGNORED"}},
+    "interference":		{"-depends":{"minecraft": "IGNORED"}},
+    "jmc":				{"-depends":{"minecraft": "IGNORED"}},
+    "jmxl":				{"-depends":{"minecraft": "IGNORED"}},
+    "led":				{"-depends":{"minecraft": "IGNORED"}},
+    "led-common":		{"-depends":{"minecraft": "IGNORED"}},
+    "redbits":			{"-depends":{"minecraft": "IGNORED"}},
+    "redbits-common":	{"-depends":{"minecraft": "IGNORED"}}
+  }
+}
