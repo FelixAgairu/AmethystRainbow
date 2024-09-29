@@ -56,7 +56,7 @@
 一般情况不需要更新Fabric，只需更新Mod
 
 ## Mod列表 [modrinth](https://modrinth.com/)
-全部mod来自于modrinth，为减小大小，Github上仅提供mod列表：
+全部mod来自于modrinth：
 - amethystequipment-v1.0.4-fabric-1.21.jar
 - animal_feeding_trough-1.1.2+1.21.1.jar
 - appleskin-fabric-mc1.21-3.0.5.jar
