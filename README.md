@@ -1,7 +1,59 @@
-## Amethyst Rainbow 客户端
-主要用于代码透明化
-#### 需要 WinRAR
-#### 需要 AutoIt3 
+## 使用说明
+### =========下载==========
+> [!NOTE]
+> 下载方式
+> [Discord](https://discord.gg/J5ERpVA5)
+> [QQ群](https://qm.qq.com/q/eLQhn5RmpO)
+
+> [!TIP]
+> 下载方式的各链接内容一致，按需求选择即可，文件仅需下载最新版
+
+#### 文件夹其他内容：
+- 客户端MOD可选
+> 文件夹包含了一系列仅客户端MOD
+> 包括配方说明、UI调整等MOD
+
+> [!CAUTION]
+> 使用其他MOD可能与现存MOD不兼容导致
+
+> [!WARNING]
+> 可能需要手动下载MOD更新
+
+- 光影包
+
+> [!WARNING]
+> 使用光影包可能导致游戏不稳定闪退等问题
+
+- 资源包
+- 截图
+
+
+### =========安装==========
+1. 打开下载完成的【AmethystRainbowV🔢.exe】
+2. 根据安装器内容提示继续
+3. 安装建议按顺序依次进行
+4. 下载官方Java版 -> 安装Zerotier -> 安装Fabric -> 安装Mods
+> [!WARNING]
+> 安装Fabric Loader之前应关闭官方启动器
+3. Fabric安装完成后关闭`Fabric Installer`窗口即可
+> [!TIP]
+> 为节约流量及过滤用户，加入服务器需要授权Zerotier虚拟局域网访问，
+> 请在加入[Discord](https://discord.gg/J5ERpVA5)或[QQ群](https://qm.qq.com/q/eLQhn5RmpO)
+4. 完成后启动官方启动器，选择`fabric-loader-1.21.1`开始游戏
+> [!WARNING]
+> 默认2G内存分配，可能不足并引起卡顿
+
+> [!TIP]
+> 启动器->配置->fabric-loader-1.21.1->右侧三个点打开->选择编辑->最下方点显示更多选项
+
+> [!TIP]
+> JVM参数`-Xmx2G`表示最大内存占用2GB，可按需要调整，建议4G（`-Xmx4G`）以上
+
+> [!CAUTION]
+> 请勿随意调整JVM参数，将导致无法启动、闪退、卡顿等问题
+
+### =========更新==========
+一般情况不需要更新Fabric，只需更新Mod
 
 ## Mod列表 [modrinth](https://modrinth.com/)
 全部mod来自于modrinth，为减小大小，Github上仅提供mod列表：
