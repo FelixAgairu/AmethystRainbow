@@ -227,3 +227,9 @@
 - xlpackets-1.0.5-1.21.jar
 - YetAnotherConfigLib-3.5.0+1.21-fabric.jar
 - youre-in-grave-danger-fabric-2.4.9.jar
+
+> [!IMPORTANT]
+> [ins.exe](ThirdParty/Fabric/ins.exe) 来自于[fabric-installer-1.0.1.exe](https://maven.fabricmc.net/net/fabricmc/fabric-installer/1.0.1/fabric-installer-1.0.1.exe) [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)
+
+> [!IMPORTANT]
+> [ZeroTierOne.msi]("ThirdParty/Zerotier/ZeroTierOne.msi") 来自于[ZeroTier One.msi](https://download.zerotier.com/dist/ZeroTier%20One.msi) [BSL 1.1](https://github.com/zerotier/ZeroTierOne?tab=License-1-ov-file#)
