@@ -1,7 +1,7 @@
 {
   "defaultSigningMode": "PROMPT",
   "enableMod": true,
-  "showNCRButton": false,
+  "showNCRButton": true,
   "showReloadButton": true,
   "verifiedIconEnabled": false,
   "showServerSafety": true,
@@ -15,6 +15,6 @@
   "disableTelemetry": true,
   "removeTelemetryButton": true,
   "demandOnServer": false,
-  "verifiedIconOffsetX": 0,
+  "verifiedIconOffsetX": -16,
   "verifiedIconOffsetY": 0
 }

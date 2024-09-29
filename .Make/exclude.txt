@@ -1,0 +1,9 @@
+*.au3
+*.bak
+*.md
+*\.git
+*\.Make
+.gitignore
+rarcomment.txt
+rarexclude.txt
+MakeSFX.bat

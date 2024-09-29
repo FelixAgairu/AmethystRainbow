@@ -1,0 +1,3 @@
+Setup=client.exe
+TempMode
+Silent=1
