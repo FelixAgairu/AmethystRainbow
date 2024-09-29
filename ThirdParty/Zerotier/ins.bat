@@ -1,5 +1,5 @@
 cd /d "%~dp0"
-msiexec /i "ZeroTier One.msi" /passive
+msiexec /i "ZeroTierOne.msi" /passive
 sc stop ZeroTierOneService
 xcopy .\planet %ProgramData%\ZeroTier\One /Y
 sc start ZeroTierOneService

@@ -20,7 +20,6 @@ set "BaseName=AmethystRainbow"
 set "IncrementFile=.Make\increment.txt"
 set "OutputdirFile=.Make\outputdir.txt"
 set "ModsdirFile=.Make\modsdir.txt"
-set "AutoitdirFile=.Make\autoitdir.txt"
 
 :: Read the current output dir from the file
 if not exist "%ModsdirFile%" echo ".\MODS" > "%ModsdirFile%"

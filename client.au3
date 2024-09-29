@@ -47,16 +47,16 @@ Func InstFristMenu()
 	
 	
 	
-	$id_But_Link = GUICtrlCreateButton("①下载官方Java版", 5, 5, 140, 30)
+	$id_But_Link = GUICtrlCreateButton("下载官方Java版", 5, 5, 140, 30)
 	GUICtrlSetOnEvent($id_But_Link, "OpenMcLink")
 	
-	$id_But_Zt = GUICtrlCreateButton("②安装Zerotier", 5, 40, 140, 30)
+	$id_But_Zt = GUICtrlCreateButton("安装Zerotier", 5, 40, 140, 30)
 	GUICtrlSetOnEvent($id_But_Zt, "InstZerotier")
 	
-	$id_But_Loader = GUICtrlCreateButton("③安装Fabric", 5, 75, 140, 30)
+	$id_But_Loader = GUICtrlCreateButton("安装Fabric", 5, 75, 140, 30)
 	GUICtrlSetOnEvent($id_But_Loader, "InstLoader")
 	
-	$id_But_Mods = GUICtrlCreateButton("④安装 Mods", 5, 110, 140, 30)
+	$id_But_Mods = GUICtrlCreateButton("安装Mods", 5, 110, 140, 30)
 	GUICtrlSetOnEvent($id_But_Mods, "InstMods")
 	
 EndFunc
