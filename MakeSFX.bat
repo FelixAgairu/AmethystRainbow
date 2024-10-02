@@ -39,7 +39,7 @@ set /a Increment+=1
 echo {"projectID":0,"modpackName":"Amethyst🌈","modpackVersion":"V%Increment%","useMetadata":false} > "Content\.minecraft\config\bcc.json"
 
 :: Format the new archive name
-set "ArchiveName=%Outputdir%%BaseName%%Increment%.exe"
+set "ArchiveName=%Outputdir%%BaseName%V%Increment%.exe"
 
 :: Compile client.au3 to client.exe
 "%AutoitPath%\Aut2Exe\Aut2exe_x64.exe" /in client.au3 /icon .Make\client.ico /productname %BaseName% /fileversion %Increment%
