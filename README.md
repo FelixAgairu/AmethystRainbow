@@ -49,6 +49,10 @@
 > [!TIP]
 > JVM参数`-Xmx2G`表示最大内存占用2GB，可按需要调整，建议4G（`-Xmx4G`）以上
 
+> [!WARNING]
+> 也可参考其他的完整启动参数：
+`-Xms6G -Xmx6G -XX:+UseZGC -XX:+ZGenerational`
+
 > [!CAUTION]
 > 请勿随意调整JVM参数，将导致无法启动、闪退、卡顿等问题
 
