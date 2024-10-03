@@ -54,11 +54,10 @@ if errorlevel 1 (
 :: Add mods to the archive
 "%WinRARPath%" a -ep -apContent\.minecraft\mods "%ArchiveName%" "%Modsdir%\*"
 
+:: Add hash sum to the archive
 for /f "tokens=*" %%i in ('powershell -Command "(Get-FileHash -Path \"%ArchiveName%\").Hash"') do set "fileHash=%%i"
 set "filePathNoExt=%ArchiveName:~0,-4%"
 echo %fileHash% > "%filePathNoExt%.SHA256"
-
-pause
 
 :: Save the new increment number back to the file
 echo %Increment% > "%IncrementFile%"
