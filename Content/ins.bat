@@ -21,6 +21,7 @@ copy %AppData%\.minecraft\mods\emi* %AppData%\.minecraft\modsbk\ /Y
 copy %AppData%\.minecraft\mods\emi_enchanting* %AppData%\.minecraft\modsbk\ /Y
 copy %AppData%\.minecraft\mods\emoji-type* %AppData%\.minecraft\modsbk\ /Y
 copy %AppData%\.minecraft\mods\enhancedblockentities* %AppData%\.minecraft\modsbk\ /Y
+copy %AppData%\.minecraft\mods\entityculling* %AppData%\.minecraft\modsbk\ /Y
 copy %AppData%\.minecraft\mods\firstperson* %AppData%\.minecraft\modsbk\ /Y
 copy %AppData%\.minecraft\mods\infinite-music* %AppData%\.minecraft\modsbk\ /Y
 copy %AppData%\.minecraft\mods\inventive_inventory* %AppData%\.minecraft\modsbk\ /Y
