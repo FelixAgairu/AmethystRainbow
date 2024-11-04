@@ -1,7 +1,6 @@
 {
   "version": 1,
   "overrides": {
-    "frost":			{"-depends":{"minecraft": "IGNORED"}},
-    "jmc":				{"-depends":{"minecraft": "IGNORED"}}
+    "frost":			{"-depends":{"minecraft": "IGNORED"}}
   }
 }

@@ -56,7 +56,7 @@ Func InstFristMenu()
 	$id_But_Loader = GUICtrlCreateButton("安装Fabric", 5, 75, 140, 30)
 	GUICtrlSetOnEvent($id_But_Loader, "InstLoader")
 	
-	$id_But_Mods = GUICtrlCreateButton("安装Mods", 5, 110, 140, 30)
+	$id_But_Mods = GUICtrlCreateButton("安装客户端文件", 5, 110, 140, 30)
 	GUICtrlSetOnEvent($id_But_Mods, "InstMods")
 	
 EndFunc
@@ -66,10 +66,11 @@ Func InstUpdateMenu()
 	GUICtrlDelete($id_But_Update)
 	GUICtrlDelete($id_But_Uninstall)
 	
-
-	$id_But_Loader = GUICtrlCreateButton("更新Fabric", 5, 5, 140, 30)
+	$id_But_Zt = GUICtrlCreateButton("更新Zerotier", 5, 5, 140, 30)
+	GUICtrlSetOnEvent($id_But_Zt, "InstZerotier")
+	$id_But_Loader = GUICtrlCreateButton("更新Fabric", 5, 40, 140, 30)
 	GUICtrlSetOnEvent($id_But_Loader, "InstLoader")
-	$id_But_Mods = GUICtrlCreateButton("更新Mods", 5, 40, 140, 30)
+	$id_But_Mods = GUICtrlCreateButton("更新客户端文件", 5, 75, 140, 30)
 	GUICtrlSetOnEvent($id_But_Mods, "InstMods")
 EndFunc
 
@@ -79,7 +80,7 @@ Func UninstallMenu()
 	GUICtrlDelete($id_But_Update)
 	GUICtrlDelete($id_But_Uninstall)
 	
-	Local $id_But_Zt = GUICtrlCreateButton("卸载Zerotier", 5, 75, 140, 30)
+	Local $id_But_Zt = GUICtrlCreateButton("卸载Zerotier", 5, 5, 140, 30)
 	GUICtrlSetOnEvent($id_But_Zt, "UninZerotier")
 EndFunc
 
@@ -94,7 +95,7 @@ EndFunc
 Func InstZerotier()
 	GUICtrlSetState($id_But_Zt, $GUI_DISABLE)
 	GUICtrlSetData($id_But_Zt, "正在安装...")
-	ShellExecuteWait(".\ThirdParty\Zerotier\ins.bat", "", "", $SHEX_OPEN, @SW_HIDE)
+	ShellExecute(".\ThirdParty\Zerotier\ins.bat", "", "", $SHEX_OPEN, @SW_HIDE)
 	GUICtrlSetData($id_But_Zt, "已完成")
 EndFunc
 

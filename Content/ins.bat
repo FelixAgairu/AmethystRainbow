@@ -15,6 +15,8 @@ copy %AppData%\.minecraft\mods\BetterThirdPerson* %AppData%\.minecraft\modsbk\ /
 copy %AppData%\.minecraft\mods\cat_jam* %AppData%\.minecraft\modsbk\ /Y
 copy %AppData%\.minecraft\mods\chat_heads* %AppData%\.minecraft\modsbk\ /Y
 copy %AppData%\.minecraft\mods\cicada-lib* %AppData%\.minecraft\modsbk\ /Y
+copy %AppData%\.minecraft\mods\clienttweaks* %AppData%\.minecraft\modsbk\ /Y
+copy %AppData%\.minecraft\mods\cool_elytra* %AppData%\.minecraft\modsbk\ /Y
 copy %AppData%\.minecraft\mods\dynamic-fps* %AppData%\.minecraft\modsbk\ /Y
 copy %AppData%\.minecraft\mods\eg-inventory-blur* %AppData%\.minecraft\modsbk\ /Y
 copy %AppData%\.minecraft\mods\emi* %AppData%\.minecraft\modsbk\ /Y
@@ -36,11 +38,14 @@ copy %AppData%\.minecraft\mods\now-playing* %AppData%\.minecraft\modsbk\ /Y
 copy %AppData%\.minecraft\mods\nvidium* %AppData%\.minecraft\modsbk\ /Y
 copy %AppData%\.minecraft\mods\physics-mod* %AppData%\.minecraft\modsbk\ /Y
 copy %AppData%\.minecraft\mods\PickUpNotifier* %AppData%\.minecraft\modsbk\ /Y
+copy %AppData%\.minecraft\mods\rrls* %AppData%\.minecraft\modsbk\ /Y
 copy %AppData%\.minecraft\mods\RoughlyEnoughItems* %AppData%\.minecraft\modsbk\ /Y
 copy %AppData%\.minecraft\mods\skinlayers3d* %AppData%\.minecraft\modsbk\ /Y
 copy %AppData%\.minecraft\mods\soundcontroller* %AppData%\.minecraft\modsbk\ /Y
 copy %AppData%\.minecraft\mods\spark* %AppData%\.minecraft\modsbk\ /Y
 copy %AppData%\.minecraft\mods\symbol-chat* %AppData%\.minecraft\modsbk\ /Y
+copy %AppData%\.minecraft\mods\YungsApi* %AppData%\.minecraft\modsbk\ /Y
+copy %AppData%\.minecraft\mods\YungsMenuTweaks* %AppData%\.minecraft\modsbk\ /Y
 rd /S /Q %AppData%\.minecraft\mods
 md %AppData%\.minecraft\mods
 xcopy %AppData%\.minecraft\modsbk\* %AppData%\.minecraft\mods\ /Y /F
