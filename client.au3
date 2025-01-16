@@ -7,7 +7,7 @@
 Opt("GUIOnEventMode", 1)
 
 Global $id_But_First, $id_But_Update, $id_But_Uninstall
-Global $id_But_Link, $id_But_Zt, $id_But_Loader, $id_But_Mods, $id_But_UnZt
+Global $id_But_Link, $id_But_Zt, $id_But_Ts, $id_But_Loader, $id_But_Mods, $id_But_UnZt
 
 _StartA()
 Exit
@@ -50,8 +50,11 @@ Func InstFristMenu()
 	$id_But_Link = GUICtrlCreateButton("下载官方Java版", 5, 5, 140, 30)
 	GUICtrlSetOnEvent($id_But_Link, "OpenMcLink")
 	
-	$id_But_Zt = GUICtrlCreateButton("安装Zerotier", 5, 40, 140, 30)
-	GUICtrlSetOnEvent($id_But_Zt, "InstZerotier")
+	; $id_But_Zt = GUICtrlCreateButton("安装Zerotier", 5, 40, 140, 30)
+	; GUICtrlSetOnEvent($id_But_Zt, "InstZerotier")
+	
+	$id_But_Ts = GUICtrlCreateButton("安装Tailscale", 5, 40, 140, 30)
+	GUICtrlSetOnEvent($id_But_Ts, "InstTailscale")
 	
 	$id_But_Loader = GUICtrlCreateButton("安装Fabric", 5, 75, 140, 30)
 	GUICtrlSetOnEvent($id_But_Loader, "InstLoader")
@@ -66,8 +69,10 @@ Func InstUpdateMenu()
 	GUICtrlDelete($id_But_Update)
 	GUICtrlDelete($id_But_Uninstall)
 	
-	$id_But_Zt = GUICtrlCreateButton("更新Zerotier", 5, 5, 140, 30)
-	GUICtrlSetOnEvent($id_But_Zt, "InstZerotier")
+	; $id_But_Zt = GUICtrlCreateButton("更新Zerotier", 5, 5, 140, 30)
+	; GUICtrlSetOnEvent($id_But_Zt, "InstZerotier")
+	$id_But_Ts = GUICtrlCreateButton("更新Tailscale", 5, 5, 140, 30)
+	GUICtrlSetOnEvent($id_But_Ts, "InstTailscale")
 	$id_But_Loader = GUICtrlCreateButton("更新Fabric", 5, 40, 140, 30)
 	GUICtrlSetOnEvent($id_But_Loader, "InstLoader")
 	$id_But_Mods = GUICtrlCreateButton("更新客户端文件", 5, 75, 140, 30)
@@ -82,6 +87,9 @@ Func UninstallMenu()
 	
 	Local $id_But_Zt = GUICtrlCreateButton("卸载Zerotier", 5, 5, 140, 30)
 	GUICtrlSetOnEvent($id_But_Zt, "UninZerotier")
+	
+	Local $id_But_Ts = GUICtrlCreateButton("卸载Tailscale", 5, 40, 140, 30)
+	GUICtrlSetOnEvent($id_But_Ts, "UninTailscale")
 EndFunc
 
 
@@ -92,11 +100,18 @@ Func OpenMcLink()
 	ShellExecute("https://aka.ms/minecraftClientWindows")
 EndFunc
 
-Func InstZerotier()
-	GUICtrlSetState($id_But_Zt, $GUI_DISABLE)
-	GUICtrlSetData($id_But_Zt, "正在安装...")
-	ShellExecute(".\ThirdParty\Zerotier\ins.bat", "", "", $SHEX_OPEN, @SW_HIDE)
-	GUICtrlSetData($id_But_Zt, "已完成")
+; Func InstZerotier()
+	; GUICtrlSetState($id_But_Zt, $GUI_DISABLE)
+	; GUICtrlSetData($id_But_Zt, "正在安装...")
+	; ShellExecute(".\ThirdParty\Zerotier\ins.bat", "", "", $SHEX_OPEN, @SW_HIDE)
+	; GUICtrlSetData($id_But_Zt, "已完成")
+; EndFunc
+
+Func InstTailscale()
+	GUICtrlSetState($id_But_Ts, $GUI_DISABLE)
+	GUICtrlSetData($id_But_Ts, "正在安装...")
+	ShellExecute(".\ThirdParty\Tailscale\tailscale.msi", "", "", $SHEX_OPEN, @SW_HIDE)
+	GUICtrlSetData($id_But_Ts, "已完成")
 EndFunc
 
 Func UninZerotier()
@@ -104,6 +119,13 @@ Func UninZerotier()
 	GUICtrlSetData($id_But_Zt, "正在卸载...")
 	ShellExecuteWait(".\ThirdParty\Zerotier\uni.bat", "", "", $SHEX_OPEN, @SW_HIDE)
 	GUICtrlSetData($id_But_Zt, "已完成")
+EndFunc
+
+Func UninTailscale()
+	GUICtrlSetState($id_But_Ts, $GUI_DISABLE)
+	GUICtrlSetData($id_But_Ts, "正在卸载...")
+	ShellExecuteWait(".\ThirdParty\Tailscale\tailscale.msi", "", "", $SHEX_OPEN, @SW_HIDE)
+	GUICtrlSetData($id_But_Ts, "已完成")
 EndFunc
 
 Func InstLoader()
