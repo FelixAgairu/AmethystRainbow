@@ -3,6 +3,10 @@
 > [!NOTE]
 > 下载方式
 > [QQ群](https://qm.qq.com/q/eLQhn5RmpO)
+> 
+> Tailscale使用请进群联系
+> 需使用指定微软账户登录Tailscale
+> 并加入felixagairu.github网络
 
 > [!TIP]
 > 文件仅需下载最新版
