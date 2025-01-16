@@ -2,7 +2,6 @@
 ### =========下载==========
 > [!NOTE]
 > 下载方式
-> [Discord](https://discord.gg/J5ERpVA5)
 > [QQ群](https://qm.qq.com/q/eLQhn5RmpO)
 
 > [!TIP]
