@@ -1,0 +1,144 @@
+{
+  "name" : "s_f2000",
+  "type": "Gun",
+  "maxAmmoCapacity" : 30,
+  "compatibleAmmo" : ["ammocreative", "s_556x45", "s_556x45_ap"],
+  "damage" : 7.0,
+  "rpm" : 850,
+  "fireModes" : ["SINGLE", "AUTOMATIC", "BURST"],
+  "fireSound" : "s_f2000",
+  "drawCooldownDuration" : 1200,
+  "aimingZoom" : 0.4,
+  "pipScopeZoom" : 0.9,
+  "gunRecoilInitialAmplitude" : 0.3,
+  "shakeRecoilAmplitude" : 0.2,
+  "shakeRecoilSpeed" : 1.5,
+  "viewRecoilAmplitude" : 1.5,
+  "inspectCooldownDuration": 3800,
+  "reticleOverlay" : "textures/gui/s_f2000_scope_pip.png",
+  "phasedReloads": [
+    {
+      "phase": "RELOADING",
+      "condition": "reloadIterationIndex == 0",
+      "duration": 4600,
+      "animation": "animation.model.reloadempty",
+      "shakeEffects": [
+        {
+          "start": 0,
+          "duration": 800,
+          "initialAmplitude": 0.2,
+          "rateOfAmplitudeDecay": 0.8
+        },
+        {
+          "start": 250,
+          "duration": 1000,
+          "initialAmplitude": 0.2,
+          "rateOfAmplitudeDecay": 0.5
+        },
+        {
+          "start": 900,
+          "duration": 400,
+          "initialAmplitude": 0.15,
+          "rateOfAmplitudeDecay": 0.5
+        },
+        {
+          "start": 1100,
+          "duration": 800,
+          "initialAmplitude": 0.2,
+          "rateOfAmplitudeDecay": 0.3
+        },
+        {
+          "start": 1000,
+          "duration": 900,
+          "initialAmplitude": 0.35,
+          "rateOfAmplitudeDecay": 0.3
+        },
+        {
+          "start": 2300,
+          "duration": 400,
+          "initialAmplitude": 0.2,
+          "rateOfAmplitudeDecay": 0.3
+        },
+        {
+          "start": 2700,
+          "duration": 400,
+          "initialAmplitude": 0.1,
+          "rateOfAmplitudeDecay": 0.3
+        },
+        {
+          "start": 3500,
+          "duration": 300,
+          "initialAmplitude": 0.1,
+          "rateOfAmplitudeDecay": 0.3
+        },
+        {
+          "start": 3600,
+          "duration": 450,
+          "initialAmplitude": 0.2,
+          "rateOfAmplitudeDecay": 0.3
+        }
+      ]
+    },
+    {
+      "phase": "RELOADING",
+      "condition": "reloadIterationIndex > 0",
+      "duration": 3800,
+      "animation": "animation.model.reload",						
+      "shakeEffects": [
+        
+        {
+          "start": 0,
+          "duration": 800,
+          "initialAmplitude": 0.2,
+          "rateOfAmplitudeDecay": 0.8
+        },
+        {
+          "start": 250,
+          "duration": 1000,
+          "initialAmplitude": 0.2,
+          "rateOfAmplitudeDecay": 0.5
+        },
+        {
+          "start": 900,
+          "duration": 400,
+          "initialAmplitude": 0.15,
+          "rateOfAmplitudeDecay": 0.5
+        },
+        {
+          "start": 1100,
+          "duration": 800,
+          "initialAmplitude": 0.2,
+          "rateOfAmplitudeDecay": 0.3
+        },
+        {
+          "start": 1000,
+          "duration": 900,
+          "initialAmplitude": 0.35,
+          "rateOfAmplitudeDecay": 0.3
+        },
+        {
+          "start": 2300,
+          "duration": 400,
+          "initialAmplitude": 0.2,
+          "rateOfAmplitudeDecay": 0.3
+        },
+        {
+          "start": 2700,
+          "duration": 400,
+          "initialAmplitude": 0.1,
+          "rateOfAmplitudeDecay": 0.3
+        }
+      ]
+    }
+  ],
+  "effects": [
+        {
+                "phase": "hit_scan_acquired",
+                "name": "tracer"
+        },
+        {
+                "phase": "firing",
+                "name": "muzzle_flash"
+        }
+  ]
+}

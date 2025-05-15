@@ -1,0 +1,21 @@
+{
+  "type": "pointblank:default",
+  "ingredients": [
+    {
+      "count": 10,
+      "item": "pointblank:gunmetal_ingot"
+    },
+    {
+      "count": 3,
+      "tag": "forge:ingots/copper"
+    },
+    {
+      "count": 20,
+      "tag": "forge:dusts/redstone"
+    }
+  ],
+  "result": {
+    "count": 10,
+    "item": "pointblank:s_gausa"
+  }
+}

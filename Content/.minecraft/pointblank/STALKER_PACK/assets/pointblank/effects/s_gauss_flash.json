@@ -1,0 +1,21 @@
+{
+	"type": "attached_projectile",
+	"name": "s_gauss_flash",
+	"texture": "textures/effect/s_gauss_flash.png",
+	"blendMode": "ADDITIVE",
+	"face": {
+	  "width": 5,
+	  "minU": 0,
+	  "maxU": 1
+	},
+	"sprites": {
+	  "type": "play_once",
+	  "rows": 6,
+	  "columns": 6,
+	  "fps": 70
+	},
+	"duration" : 500,
+	"brightness": 1,
+	"glow": true,
+	"depthTest": false
+}

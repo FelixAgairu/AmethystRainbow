@@ -1,0 +1,104 @@
+{
+  "name" : "s_protecta",
+  "type": "Gun",
+  "maxAmmoCapacity" : 12,
+  "maxAmmoPerReloadIteration" : 1,
+  "compatibleAmmo" : ["ammocreative", "s_12x70_buckshot_ammo", "s_12x70_slug_ammo", "s_12x70_dart_ammo"],
+  "pelletCount" : 30,
+  "pelletSpread" : 0.1,
+  "damage" : 2.5,
+  "rpm" : 200,
+  "reloadCooldownDuration" : 1250,
+  "fireModes" : ["SINGLE"],
+  "fireSound" : "s_win1300",
+  "drawCooldownDuration" : 700,
+  "aimingZoom" : 0.25,
+  "gunRecoilInitialAmplitude" : 0.8,
+  "shakeRecoilAmplitude" : 0.65,
+  "shakeRecoilSpeed" : 3.5,
+  "viewRecoilAmplitude" : 7,
+  "inspectCooldownDuration" : 4200,
+  "muzzleFlashScale" : 2,
+  "phasedReloads": [
+    {
+      "phase": "PREPARING",
+      "condition": "reloadIterationIndex == -1",
+      "duration": 400,
+      "animation": "animation.model.preparealt"
+    },
+    {
+      "phase": "PREPARING",
+      "condition": "reloadIterationIndex >= 0",
+      "duration": 400,
+      "animation": "animation.model.prepare"
+    },
+    {
+      "phase": "RELOADING",
+      "condition": "reloadIterationIndex == 0",
+      "duration": 1250,
+      "animation": "animation.model.chamberload",
+      "shakeEffects": [
+        {
+          "start": 0,
+          "duration": 1500,
+          "initialAmplitude": 0.1,
+          "rateOfAmplitudeDecay": 0.8
+        },
+        {
+          "start": 300,
+          "duration": 500,
+          "initialAmplitude": 0.2,
+          "rateOfAmplitudeDecay": 0.3
+        },
+        {
+          "start": 800,
+          "duration": 600,
+          "initialAmplitude": 0.15,
+          "rateOfAmplitudeDecay": 0.4
+        },
+        {
+          "start": 1190,
+          "duration": 400,
+          "initialAmplitude": 0.2,
+          "rateOfAmplitudeDecay": 0.3
+        }
+      ]
+    },
+    {
+      "phase": "RELOADING",
+      "condition": "reloadIterationIndex > 0",
+      "duration": 1250,
+      "animation": "animation.model.iterativeload",						
+      "shakeEffects": [
+        {
+          "start": 0,
+          "duration": 1000,
+          "initialAmplitude": 0.1,
+          "rateOfAmplitudeDecay": 0.8
+        },
+        {
+          "start": 400,
+          "duration": 600,
+          "initialAmplitude": 0.2,
+          "rateOfAmplitudeDecay": 0.5
+        }
+      ]
+    },
+    {
+      "phase": "COMPLETETING",
+      "condition": "reloadIterationIndex >= 0",
+      "duration": 400,
+      "animation": "animation.model.finish"
+    }
+  ],
+  "effects": [
+        {
+                "phase": "hit_scan_acquired",
+                "name": "tracer"
+        },
+        {
+                "phase": "firing",
+                "name": "muzzle_flash"
+        }
+  ]
+}

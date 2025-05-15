@@ -1,0 +1,85 @@
+{
+  "name" : "s_rpg",
+  "type": "Gun",
+  "maxAmmoCapacity" : 1,
+  "compatibleAmmo" : ["ammocreative", "s_rpgrocket"],
+  "damage" : 20.0,
+  "rpm" : 89,
+  "reloadCooldownDuration" : 2500,
+  "fireModes" : ["SINGLE"],
+  "fireSound" : "s_rpg",
+  "reloadSound" : "reload",
+  "drawCooldownDuration" : 1000,
+  "gunRecoilInitialAmplitude" : 0.3,
+  "shakeRecoilAmplitude" : 2,
+  "shakeRecoilSpeed" : 2,
+  "viewRecoilAmplitude" : 0.8,
+  "aimingZoom" : 0.6,
+  "pipScopeZoom" : 0.7,
+  "bobbing" : 0.5,
+  "reticleOverlay" : "textures/gui/pgo7_scope_pip.png",
+  "phasedReloads": [
+    {
+      "phase": "RELOADING",
+      "duration": 7770,
+      "animation": "animation.model.reload",
+      "shakeEffects": [
+        {
+          "start": 0,
+          "duration": 900,
+          "initialAmplitude": 0.2,
+          "rateOfAmplitudeDecay": 0.8
+        },
+        {
+          "start": 800,
+          "duration": 700,
+          "initialAmplitude": 0.2,
+          "rateOfAmplitudeDecay": 0.5
+        },
+        {
+          "start": 1800,
+          "duration": 700,
+          "initialAmplitude": 0.2,
+          "rateOfAmplitudeDecay": 0.5
+        },
+        {
+          "start": 3200,
+          "duration": 400,
+          "initialAmplitude": 0.2,
+          "rateOfAmplitudeDecay": 0.5
+        },
+        {
+          "start": 3600,
+          "duration": 400,
+          "initialAmplitude": 0.2,
+          "rateOfAmplitudeDecay": 0.5
+        },
+        {
+          "start": 3800,
+          "duration": 400,
+          "initialAmplitude": 0.2,
+          "rateOfAmplitudeDecay": 0.5
+        },
+        {
+          "start": 4700,
+          "duration": 400,
+          "initialAmplitude": 0.2,
+          "rateOfAmplitudeDecay": 0.5
+        },
+        {
+          "start": 5200,
+          "duration": 1000,
+          "initialAmplitude": 0.2,
+          "rateOfAmplitudeDecay": 0.5
+        }
+      ]
+    }
+  ],
+  
+  "effects": [
+  	{ 
+		"phase": "firing",
+		"name": "muzzle_flash"
+  	}
+  ]
+}

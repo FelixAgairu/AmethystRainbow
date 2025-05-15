@@ -1,0 +1,24 @@
+{
+	"type": "detached_projectile",
+	"name": "s_gauss_tracer",
+	"texture": "textures/effect/s_gauss_tracer.png",
+	"blendMode": "ADDITIVE",
+	"duration" : 300,
+	"blade": { 
+		"count": 2,
+		"brightness": 3,
+		"width": 0.6,
+		"minU": 0,
+		"maxU": 0.75
+	},
+	"face": {
+		"brightness": 3,
+		"width": 0.6,
+		"minU": 0.75,
+		"maxU": 1
+	},
+	"numRotations": 3,
+	"glow": true,
+	"initialSpeed": 300,
+	"acceleration": -10
+}
