@@ -1,4 +1,5 @@
 *.bak
 *.rartemp
+assetsdir.txt
+outputdir.txt
 client.exe
-/Content/.minecraft/shaderpacks
