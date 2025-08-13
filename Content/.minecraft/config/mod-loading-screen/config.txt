@@ -1,4 +1,0 @@
-#To use a custom background image, create a file named background.png in this folder. The recommended size is 960x540.
-#To use a custom icon image, create a file named icon.png in this folder. It should be square.
-#Mon Sep 16 06:58:40 CST 2024
-enableMemoryDisplay=false

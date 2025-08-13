@@ -1,0 +1,7 @@
+*\.fabric
+*\crash-reports
+*\downloads
+*\logs
+*\saves
+*\options.txt
+*\servers.dat
