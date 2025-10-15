@@ -2,6 +2,8 @@
 *\crash-reports
 *\downloads
 *\logs
+*\pointblank
 *\saves
 *\options.txt
 *\servers.dat
+*.disabled
