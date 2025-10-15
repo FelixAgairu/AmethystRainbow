@@ -10,6 +10,7 @@ param (
 	
 	[switch]$s,	# Sign the exe
 	[switch]$ni,	# No increment (And use value loaded from file)
+	[switch]$na,	# No arc (Output .exe only)
 	
 	[Alias("?", "Show-Help", "Get-Help", "ShowHelp", "GetHelp", "help")]
 	[switch]$h		# Get help
@@ -130,6 +131,11 @@ if ($compile.ExitCode -ne 0) {
 if ($s) {					#PARAM $s Sign the exe
 	Write-Host "Type your PFX password"
 	Set-AuthenticodeSignature -FilePath "client.exe" -Certificate (Get-PfxCertificate -FilePath "$CertificateDir") -TimestampServer "http://timestamp.digicert.com" -Force
+}
+
+if ($na) {
+    Write-Host "Exe only mode enabled!"
+    exit 1
 }
 
 # Setup archive

@@ -2,7 +2,7 @@ Setup=client.exe
 TempMode
 Silent=1
 Shortcut=P, "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Minecraft Launcher\MinecraftLauncher.exe", AmethystRainbow, , "Minecraft Launcher", 
-Shortcut=P, "https://github.com/FelixAgairu/AmethystRainbow", AmethystRainbow, , "Amethyst Rainbow GitHub", client.ico
+Shortcut=P, "https://github.com/FelixAgairu/AmethystRainbow", AmethystRainbow, , "Amethyst Rainbow on GitHub", client.ico
 Shortcut=P, %APPDATA%\.minecraft\config, AmethystRainbow, , "配置文件-文件夹", client.ico
 Shortcut=P, %APPDATA%\.minecraft\crash-reports, AmethystRainbow, , "崩溃报告-文件夹", client.ico
 Shortcut=P, %APPDATA%\.minecraft\logs, AmethystRainbow, , "游戏日志-文件夹", client.ico
