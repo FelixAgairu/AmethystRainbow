@@ -1,0 +1,10 @@
+将以上文件夹复制至我的世界配置文件夹内
+
+例如：
+%AppData%\.minecraft
+
+例如：
+C:\Users\你的用户名\AppData\Roaming\.minecraft
+
+例如：
+D:\PCL2\1.21.1
