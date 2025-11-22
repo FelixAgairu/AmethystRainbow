@@ -25,14 +25,9 @@
 ## 更新
 一般只需更新`Fabric`和`客户端文件`，不需要更新`Zerotier`。
 
-## 附图
-![安装介绍及步骤-Updated-V78](https://github.com/user-attachments/assets/0ad59bef-920f-4126-b76d-dd984809955a)
+## 其他
+[ins.exe](ThirdParty/Fabric/ins.exe)@[fabric-installer-1.0.1.exe](https://maven.fabricmc.net/net/fabricmc/fabric-installer/1.0.1/fabric-installer-1.0.1.exe) [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)
 
-> [!IMPORTANT]
-> [ins.exe](ThirdParty/Fabric/ins.exe)来自于[fabric-installer-1.0.1.exe](https://maven.fabricmc.net/net/fabricmc/fabric-installer/1.0.1/fabric-installer-1.0.1.exe) [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)
+[tailscale.msi]("ThirdParty/Tailscale/tailscale.msi")@[tailscale-setup-latest.exe](https://pkgs.tailscale.com/stable/tailscale-setup-latest.exe) [Legal](https://tailscale.com/legal) [BSD-3-Clause](https://github.com/tailscale/tailscale?tab=BSD-3-Clause-1-ov-file#readme)
 
-> [!IMPORTANT]
-> [tailscale.msi]("ThirdParty/Tailscale/tailscale.msi")来自于[tailscale-setup-latest.exe](https://pkgs.tailscale.com/stable/tailscale-setup-latest.exe) [Legal](https://tailscale.com/legal) [BSD-3-Clause](https://github.com/tailscale/tailscale?tab=BSD-3-Clause-1-ov-file#readme)
-
-> [!IMPORTANT]
-> [ZeroTierOne.msi]("ThirdParty/Zerotier/ZeroTierOne.msi")来自于[ZeroTier One.msi](https://download.zerotier.com/dist/ZeroTier%20One.msi) [BSL 1.1](https://github.com/zerotier/ZeroTierOne?tab=License-1-ov-file#)
+[ZeroTierOne.msi]("ThirdParty/Zerotier/ZeroTierOne.msi")@[ZeroTier One.msi](https://download.zerotier.com/dist/ZeroTier%20One.msi) [BSL 1.1](https://github.com/zerotier/ZeroTierOne?tab=License-1-ov-file#)
