@@ -22,6 +22,8 @@ Global $id_But_Back
 Global $data_But_Wait = "请稍后..."
 Global $data_Edit_Info = "按钮：“继续”"&@crlf&"  开始安装流程"&@crlf&""&@crlf&"按钮：“主要帮助”"&@crlf&"按钮：“图文帮助”"&@crlf&"  打开相关帮助窗口"&@crlf&""&@crlf&"按钮：“退出”"&@crlf&"  关闭本程序"
 
+Global $the_version = 124
+
 _StartMain()
 
 Exit
@@ -79,7 +81,7 @@ Func CloseTextHelp()
 EndFunc
 
 Func ShowMenuWnd()
-	$win_main = GUICreate("Amethyst 🏳️‍🌈", 340, 430, -1, -1, $GUI_SS_DEFAULT_GUI - $WS_MINIMIZEBOX)
+	$win_main = GUICreate("Amethyst 🏳️‍🌈 v"&$the_version, 340, 430, -1, -1, $GUI_SS_DEFAULT_GUI - $WS_MINIMIZEBOX)
 	GUISetIcon(".\ico.ico", 0)
 	GUISetOnEvent($GUI_EVENT_CLOSE, "OnExit")
 	

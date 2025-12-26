@@ -3,3 +3,6 @@
 assetsdir.txt
 outputdir.txt
 client.exe
+.Make/outputdir.txt
+.Make/increment.txt
+/.Make
